@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.0" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+	<persistence-unit name="demo">
+		<provider>org.hibernate.ejb.HibernatePersistence</provider>
+		<class>com.app.domain.model.DomainEntity</class>
+		<class>com.app.domain.model.types.Administrador</class>
+		<class>com.app.domain.model.types.Persona</class>
+		<class>com.app.domain.model.types.Usuario</class>
+		<class>com.app.infrastructure.security.Authority</class>
+		<class>com.app.infrastructure.security.UserAccount</class>
+		
+		<properties>
+			<property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" />
+			<property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3308/testspring" />
+			<property name="javax.persistence.jdbc.user" value="rootApp" />
+			<property name="javax.persistence.jdbc.password" value="root123" />
+
+			<property name="hibernate.format_sql" value="true" />
+			<property name="hibernate.show_sql" value="false" />
+			<property name="hibernate.hbm2ddl.auto" value="create" />
+			<property name="hibernate.cglib.use_reflection_optimizer" value="true" />
+		</properties>
+		
+	</persistence-unit>
+</persistence>

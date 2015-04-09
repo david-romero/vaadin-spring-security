@@ -1,0 +1,6 @@
+eclipse.preferences.version=1
+extraProperties=sonar.java.coveragePlugin\=jacoco\r\nsonar.jacoco.itReportPath\=${env.WORKSPACE}/target/${jacoco.out.file}\r\nsonar.dynamicAnalysis\=true
+lastAnalysisDate=1388851874034
+projectKey=my\:project\:
+serverUrl=http\://192.168.1.104\:9000
+version=2
